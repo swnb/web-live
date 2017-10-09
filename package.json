@@ -1,0 +1,16 @@
+{
+  "name": "web-live",
+  "version": "0.10",
+  "description": "this is a web live show",
+  "main": "server.js",
+  "repository": "git@github.com:swnb/web-live.git",
+  "author": "swnb <1786718956@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-body": "^2.5.0",
+    "koa-router": "^7.2.1",
+    "mime": "^2.0.3",
+    "socket.io": "^2.0.3"
+  }
+}

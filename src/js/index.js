@@ -37,11 +37,15 @@
                 let img = new Image();
                 img.src = canvas.toDataURL();
                 document.body.appendChild(img);
-                fetch('/data', {
-                    method: 'post',
-                    body: canvas.toDataURL()
-                }).then(res => {
-                    console.log(res);
+                let body = new FormData();
+                canvas.toBlob(blob => {
+                    body.append('pic', blob);
+                    fetch('/data', {
+                        method: 'post',
+                        body
+                    }).then(res => {
+                        console.log(res);
+                    });
                 });
             };
             document.body.appendChild(button);

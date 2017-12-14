@@ -8,8 +8,10 @@
   "license": "MIT",
   "dependencies": {
     "koa": "^2.3.0",
+    "koa-better-body": "^3.0.4",
     "koa-body": "^2.5.0",
     "koa-router": "^7.2.1",
+    "koa-static": "^4.0.2",
     "mime": "^2.0.3",
     "socket.io": "^2.0.3"
   }
